@@ -6,11 +6,11 @@ import jakarta.persistence.*;
 import lombok.*;
 
 //@Entity
-@Getter
-@Setter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
-@AllArgsConstructor
-@Builder
+//@Getter
+//@Setter
+//@NoArgsConstructor(access = AccessLevel.PROTECTED)
+//@AllArgsConstructor
+//@Builder
 @CacheEntity
 @PresenceRoot(channel = "note", idField = "id")
 public class Note {

@@ -29,10 +29,8 @@ dependencies {
     runtimeOnly 'com.h2database:h2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-    // 프레임워크 진입점
-    implementation "com.sharedsync:sharedsync-starter:1.1.26"
-    // LazyDto / CacheEntity / EntityConverter 자동 생성 (빌드타임)
-    annotationProcessor "com.sharedsync:sharedsync-autoconfigure:1.1.26"
+    annotationProcessor 'com.github.cow-planmate.sharedsync:sharedsync-autoconfigure:test-SNAPSHOT'
+    implementation 'com.github.cow-planmate.sharedsync:sharedsync-starter:test-SNAPSHOT'
 }
 
 tasks.named('test') {
