@@ -29,8 +29,17 @@ dependencies {
     runtimeOnly 'com.h2database:h2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-    annotationProcessor 'com.github.cow-planmate.sharedsync:sharedsync-autoconfigure:test-SNAPSHOT'
-    implementation 'com.github.cow-planmate.sharedsync:sharedsync-starter:test-SNAPSHOT'
+    annotationProcessor("com.github.cow-planmate.sharedsync:sharedsync-autoconfigure") {
+        version {
+            strictly("41e7d216c0")
+        }
+    }
+
+    implementation("com.github.cow-planmate.sharedsync:sharedsync-starter") {
+        version {
+            strictly("41e7d216c0")
+        }
+    }
 }
 
 tasks.named('test') {

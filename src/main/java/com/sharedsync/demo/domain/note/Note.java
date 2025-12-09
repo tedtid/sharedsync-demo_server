@@ -5,7 +5,7 @@ import com.sharedsync.shared.presence.annotation.PresenceRoot;
 import jakarta.persistence.*;
 import lombok.*;
 
-//@Entity
+@Entity
 //@Getter
 //@Setter
 //@NoArgsConstructor(access = AccessLevel.PROTECTED)
